@@ -1,0 +1,38 @@
+/* Flexbox Navbar Styling */
+.navbar {
+  display: flex;                    /* Flexbox enabled */
+  justify-content: space-evenly;   /* Equal spacing */
+  background-color: #333;
+  padding: 15px;
+  flex-wrap: wrap;                 
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 5px;
+}
+.navbar a:hover {
+  background-color: #555;
+  color: #fff;
+}
+.navbar a {
+  transition: all 0.3s ease;
+}
+
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar a {
+    width: 100%;
+    text-align: center;
+    margin: 5px 0;
+  }
+}
